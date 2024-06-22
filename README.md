@@ -1,4 +1,6 @@
 # Webapp - Python
+
+**Name: azure-webaapps-python.yml**
 This GitHub Actions workflow automates the deployment of a Python application to an Azure Web App. 
 
 **Trigger**: Runs on every push to the main branch.
@@ -15,3 +17,10 @@ In essence, this workflow ensures that every code push to the main branch result
 
 
 
+**Name: Grant Write Permission**
+Trigger: Runs on every pull request (on: pull_request: {}).
+Job (dummy_job): Executes on the latest Ubuntu environment.
+Steps:
+Checkout: Checks out the repository code using the specified action (actions/checkout@v3).
+Summary
+This simple workflow is designed to run on pull request events. It doesn't perform any significant actions other than checking out the code, but it establishes a structure that can be expanded with additional steps as needed.
